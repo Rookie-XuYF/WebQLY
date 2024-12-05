@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .login-container {
+        max-width: 400px;
+        padding: 15px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 100px auto auto;
+    }
+</style>
+
+<div class="login-container">
+    <h2 class="text-center">请登录</h2>
+    <div class="form-group mb-3">
+        <label for="username">用户名</label>
+        <input type="text" class="form-control" id="username" placeholder="请输入用户名" required>
+    </div>
+    <div class="form-group mb-3">
+        <label for="password">密码</label>
+        <input type="password" class="form-control" id="password" placeholder="请输入密码" required>
+    </div>
+
+    <div class="text-center mb-3"> <!-- 添加一个 div 来居中按钮 -->
+        <button type="submit" class="btn btn-primary btn-block">登录</button> <!-- 登录按钮 -->
+        <button type="submit" class="btn btn-success btn-block">注册</button> <!-- 注册按钮 -->
+    </div>
+
+    <div class="text-center mt-2">
+        <a href="">Forgot password?</a>
+    </div>
+</div>
